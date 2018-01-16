@@ -1,7 +1,6 @@
-
 package Chapter4;
-import java.util.Scanner;
 
+import java.util.Scanner;
 
 /**
  * Program to display an employees financial status including state tax and
@@ -9,15 +8,13 @@ import java.util.Scanner;
  *
  * @author Quinten Scott
  */
-public class C4_23
- {
-        /**
+public class C4_23 {
+
+    /**
      * Main Method
      *
      * @param args arguments from command line prompt
      */
-
-
     public static void main(String[] args) {
         System.out.println("Enter the Employees name: ");
         System.out.println("Number of hours worked this week: ");
@@ -38,11 +35,11 @@ public class C4_23
         double Grosspay = Hourrate * Hour;
         double Fedwithhold = Grosspay * Fedtax;
         double Statewithhold = Grosspay * Statetax;
-        System.out.printf("\n\tFederal Withholding (%.2f%%):$%.2f\n",Fedtax * 100,   Fedwithhold
-        ); 
-    System.out.printf("\tState Deduction (%.2f%%):$%.2f\n",Statetax * 100, Statewithhold
-        ); 
-    System.out.printf("\tTotal Deduction: $%.2f", Fedwithhold + Statewithhold);
+        System.out.printf("\n\tFederal Withholding (%.2f%%):$%.2f\n", Fedtax * 100, Fedwithhold
+        );
+        System.out.printf("\tState Deduction (%.2f%%):$%.2f\n", Statetax * 100, Statewithhold
+        );
+        System.out.printf("\tTotal Deduction: $%.2f", Fedwithhold + Statewithhold);
         System.out.printf("\nNet Pay: $%.2f\n", Grosspay - (Fedwithhold + Statewithhold));
     }
 

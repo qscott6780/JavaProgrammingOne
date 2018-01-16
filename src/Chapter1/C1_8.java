@@ -1,4 +1,3 @@
-
 package Chapter1;
 
 /**
@@ -6,14 +5,13 @@ package Chapter1;
  *
  * @author Quinten Scott
  */
-public class C1_8
- {
-        /**
+public class C1_8 {
+
+    /**
      * Main Method
      *
      * @param args arguments from command line prompt
      */
-
     public static void main(String[] args) {
         System.out.println("Perimter = ");
         System.out.println(2 * 5.5 * 3.1415);

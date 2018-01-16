@@ -1,23 +1,20 @@
-
 package Chapter3;
+
 import java.util.Scanner;
 
-
 /**
- * Program to display the prices and weights of two different packages to the 
+ * Program to display the prices and weights of two different packages to the
  * console
  *
  * @author Quinten Scott
  */
-public class C3_33
- {
-        /**
+public class C3_33 {
+
+    /**
      * Main Method
      *
      * @param args arguments from command line prompt
      */
-
-
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         // P is Price, W is Weight
