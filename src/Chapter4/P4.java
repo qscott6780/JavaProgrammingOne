@@ -1,5 +1,5 @@
-
 package Chapter4;
+
 import java.util.Scanner;
 
 /**
@@ -7,15 +7,13 @@ import java.util.Scanner;
  *
  * @author Quinten Scott
  */
-public class P4
- {
+public class P4 {
+
     /**
      * Main Method
      *
      * @param args arguments from command line prompt
      */
-
-
     public static void main(String[] args) {
         System.out.println("Enter the name of the 1st bidder: ");
         System.out.println("How many hours of work are required to complete the job?: ");
@@ -40,28 +38,27 @@ public class P4
 
         if (firstHourCost < secondHourCost) {
             System.out.printf("\nWinner is %s, with total cost of $%.2f ",
-                     firstBidder, firstHourCost);
+                    firstBidder, firstHourCost);
         }
         if (secondHourCost < firstHourCost) {
             System.out.printf("\nWinner is %s, with total cost of $%.2f ",
-                     secondBidder, secondHourCost);
+                    secondBidder, secondHourCost);
         }
         if (firstHourCost == secondHourCost && firstHours < secondHours) {
             System.out.printf("\nWinner is %s, with total cost of $%.2f "
                     + "and total of %d hours.", firstBidder, firstHourCost,
-                     firstHours);
+                    firstHours);
         }
         if (firstHourCost == secondHourCost && secondHours < firstHours) {
             System.out.printf("\nWinner is %s, with total cost of $%.2f "
                     + "and total of %d hours.", secondBidder,
-                     secondHourCost, secondHours);
+                    secondHourCost, secondHours);
         }
         if (firstHourCost == secondHourCost && firstHours == secondHours) {
             System.out.printf("\n%s and %s have identical bids. The hours "
                     + "required are %d and the total cost is"
                     + " $%.2f at $%.2f per hour.", firstBidder, secondBidder, firstHours,
-                     firstHourCost, firstRate);
+                    firstHourCost, firstRate);
         }
     }
 }
-

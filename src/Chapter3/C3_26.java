@@ -1,22 +1,19 @@
-
 package Chapter3;
-import java.util.Scanner;
 
+import java.util.Scanner;
 
 /**
  * Program to display separate outputs of two different integers to the console
  *
  * @author Quinten Scott
  */
-public class C3_26
- {
-        /**
+public class C3_26 {
+
+    /**
      * Main Method
      *
      * @param args arguments from command line prompt
      */
-
-
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         double userInp;
